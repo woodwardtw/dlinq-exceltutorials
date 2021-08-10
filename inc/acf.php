@@ -9,6 +9,22 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+
+function excel_example_file(){
+    if(get_field('example_excel_file')){
+        $url = get_field('example_excel_file');
+        return "<a class='btn btn-primary' href='{$url}'>Example File</a>";
+    }
+
+}
+
+function excel_primary_gif(){
+     if(get_field('primary_gif')){
+        $url = get_field('primary_gif');
+        return "<div class='col-md-3'><img src='{$url}' class='primary-gif'></div>";
+    }
+}
+
     //save acf json
         add_filter('acf/settings/save_json', 'excel_tutorials_json_save_point');
          
