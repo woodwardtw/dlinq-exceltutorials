@@ -25,15 +25,12 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-	<div class="entry-content row">
-		<div class="intro col-md-9">
-			<h2>Introduction</h2>
-			<?php the_field('introduction');?>
-		</div>
-		<div class="excel-link col-md-3">
-			<?php echo excel_example_file();?>
-		</div>
+	<div class="row tutorial">
+		<?php echo excel_intro();?>
+		<?php echo excel_example_file();?>
+		<?php echo excel_header('how_to', 'How To');?>
 		<?php echo excel_primary_gif();?>
+		<?php echo excel_how_to();?>
 		<?php //the_content(); ?>
 
 		<?php

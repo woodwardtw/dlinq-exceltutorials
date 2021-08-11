@@ -63,7 +63,7 @@
             "key": "field_6112d9255bd39",
             "label": "How To",
             "name": "how_to",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -73,15 +73,34 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6113cdcd14a80",
+            "label": "Uses",
+            "name": "uses",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_6112d95680121",
-            "label": "Mac Differences",
-            "name": "mac_differences",
+            "label": "Apple Specific",
+            "name": "apple_specific",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -149,5 +168,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1628625282
+    "modified": 1628687856
 }
