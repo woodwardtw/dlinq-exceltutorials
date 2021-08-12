@@ -11,11 +11,20 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<header class="entry-header col-md-10 offset-md-1">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
+			<div class="tutorial-nav">
+				<a href="#intro">Intro</a>
+				<a href="#how-to">How To</a>
+				<a href="#uses">Uses</a>
+				<a href="#examples">Examples</a>
+				<a href="#practice">Practice</a>
+				<a href="#conclusion">Conclusion</a>
+				<a href="#related-content">Related Content</a>
+			</div>
 
 			<?php //understrap_posted_on(); ?>
 
@@ -26,11 +35,17 @@ defined( 'ABSPATH' ) || exit;
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="row tutorial">
+		<?php echo excel_header('introduction', 'Introduction');?>
 		<?php echo excel_intro();?>
 		<?php echo excel_example_file();?>
+		
 		<?php echo excel_header('how_to', 'How To');?>
 		<?php echo excel_primary_gif();?>
 		<?php echo excel_how_to();?>
+
+		<?php echo excel_header('uses', 'Uses');?>
+		<?php echo excel_uses();?>
+
 		<?php //the_content(); ?>
 
 		<?php

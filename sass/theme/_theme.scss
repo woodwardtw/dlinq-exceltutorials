@@ -1,11 +1,41 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
+* {
+	font-family: 'Cabin', Sans-Serif;
+
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Roboto Condensed', Sans-Serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	border-bottom: 1px solid $gray;
+	margin-bottom: 25px;
+}
+
 p {
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-family: 'Cabin', Sans-Serif;
 }
 
 .tutorial {
 	padding: 20px;
+}
+
+.tutorial-nav a {
+	margin-right: 5px;
+	padding-right: 10px;
+	border-right: 1px solid $primary;
+}
+
+.tutorial-nav a:last-of-type {
+	border-right: 0;
 }
 
 .primary-gif {
@@ -13,4 +43,12 @@ p {
 	height: auto;
 	object-fit: cover;
 	margin: 30px 10px 20px 0;
+}
+
+.how-to {
+	margin-top: 50px;
+}
+
+.btn-excel {
+	margin: 20px auto;
 }
