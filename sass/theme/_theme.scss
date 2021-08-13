@@ -17,6 +17,7 @@ h1 {
 h2 {
 	border-bottom: 1px solid $gray;
 	margin-bottom: 25px;
+	margin-top: 50px;
 }
 
 p {
@@ -39,10 +40,10 @@ p {
 }
 
 .primary-gif {
-	width: 100%;
+	width: 50%;
 	height: auto;
-	object-fit: cover;
-	margin: 30px 10px 20px 0;
+	margin: 30px 20px 20px 0;
+	float:left;
 }
 
 .how-to {
@@ -51,4 +52,7 @@ p {
 
 .btn-excel {
 	margin: 20px auto;
+	border-radius: 30px;
+	padding: 15px;
+	font-size: 1.2em;
 }

@@ -31,8 +31,15 @@ function excel_example_file(){
 function excel_header($field, $title){
     if(get_field($field)){
         $clean = sanitize_title($title);
+        $text = excel_block($field);
+        if($field == 'how_to'){
+            $img = excel_primary_gif();
+        } else {
+            $img = '';
+        }
         return "<div class='col-md-10 offset-md-1 $clean'>
                     <h2 id='{$clean}'>{$title}</h2>
+                    {$img}{$text}
                 </div>
 
                 ";
@@ -42,21 +49,14 @@ function excel_header($field, $title){
 function excel_primary_gif(){
      if(get_field('primary_gif')){
         $url = get_field('primary_gif');
-        return "<div class='col-md-5 offset-md-1'><img src='{$url}' class='primary-gif'></div>";//may need to add modal link or direct file link
+        return "<img src='{$url}' class='primary-gif'>";//may need to add modal link or direct file link
     }
 }
 
-function excel_how_to(){
-    if(get_field('how_to')){
-        $how = get_field('how_to');
-        return "<div class='col-md-5'>{$how}</div>";
-    }
-}
-
-function excel_uses(){
-    if(get_field('uses')){
-        $uses = get_field('uses');
-        return "<div class='col-md-10 offset-md-1'>{$uses}</div>";
+function excel_block($field){
+    if(get_field($field)){
+        $text = get_field($field);
+        return "<div class='excel-block-text'>{$text}</div>";
     }
 }
 
