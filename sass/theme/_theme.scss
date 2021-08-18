@@ -15,9 +15,12 @@ h1 {
 }
 
 h2 {
-	border-bottom: 1px solid $gray;
+	border-bottom: 1px solid $aqua;
 	margin-bottom: 25px;
 	margin-top: 50px;
+	font-size: 2.5em;
+	border-left: 5px solid $aqua;
+	padding-left: 20px;
 }
 
 p {
@@ -55,4 +58,27 @@ p {
 	border-radius: 30px;
 	padding: 15px;
 	font-size: 1.2em;
+	transition: all .3s ease;
 }
+
+.btn-excel:hover {
+	background-color: $aqua;
+	color: $primary;
+	border: $aqua 1px solid;
+}
+
+.apple-specific {
+	border: 1px solid $aqua;
+	border-radius: 5px;
+	padding: 20px;
+	background-color: rgba($aqua,.1);
+}
+
+@include media-breakpoint-down(md) { 
+	.primary-gif {
+	width: 100%;
+	height: auto;
+	margin: 20px 0;	
+	}
+
+ }
