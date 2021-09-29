@@ -60,6 +60,15 @@ function excel_block($field){
     }
 }
 
+function excel_syntax(){
+    if(get_field('formula_syntax')){
+        $syntax = get_field('formula_syntax');
+        $first_para = strpos($syntax, '(');
+        $new = str_replace("=","<span class=''>=</span><span class='function-action'>",$syntax);
+        $final = str_replace('(','</span>(', $new);
+        var_dump($final); 
+    }
+}
 
 
     //save acf json

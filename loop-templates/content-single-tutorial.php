@@ -43,6 +43,8 @@ defined( 'ABSPATH' ) || exit;
 		<?php echo excel_header('apple_specific', 'Apple Specific');?>
 
 		<?php echo excel_header('uses', 'Uses');?>
+
+		<?php echo excel_syntax();?>
 	
 		<?php //the_content(); ?>
 
