@@ -70,6 +70,28 @@ function excel_syntax(){
     }
 }
 
+function excel_additional_examples(){
+    if( have_rows('example_files') ):
+        $html = "<div class='col-md-10 offset-md-1'>
+                    <h2 id='additional-examples'>Examples</h2><ul>";
+        // Loop through rows.
+        while( have_rows('example_files') ) : the_row();
+
+            // Load sub field value.
+            $title = get_sub_field('example_file_title');
+            $link = get_sub_field('example_file')['url'];
+            // Do something...
+            $html .= "<li><a href='{$link}'>{$title}</a></li>";
+        // End loop.
+        endwhile;
+        return $html . '</ul></div>';
+        // No value.
+        else :
+            // Do something...
+        endif;
+}
+
+
 
     //save acf json
         add_filter('acf/settings/save_json', 'excel_tutorials_json_save_point');

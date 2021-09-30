@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 				<a href="#intro">Intro</a>
 				<a href="#how-to">How To</a>
 				<a href="#uses">Uses</a>
-				<a href="#examples">Examples</a>
+				<a href="#additional-examples">Examples</a>
 				<a href="#practice">Practice</a>
 				<a href="#conclusion">Conclusion</a>
 				<a href="#related-content">Related Content</a>
@@ -45,6 +45,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php echo excel_header('uses', 'Uses');?>
 
 		<?php echo excel_syntax();?>
+		<?php echo excel_additional_examples();?>
 	
 		<?php //the_content(); ?>
 
