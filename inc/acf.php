@@ -64,9 +64,9 @@ function excel_syntax(){
     if(get_field('formula_syntax')){
         $syntax = get_field('formula_syntax');
         $first_para = strpos($syntax, '(');
-        $new = str_replace("=","<span class=''>=</span><span class='function-action'>",$syntax);
+        $new = str_replace("=","<span class='equal'>=</span><span class='function-action'>",$syntax);
         $final = str_replace('(','</span>(', $new);
-        var_dump($final); 
+        return "<div class='col-md-10 offset-md-1'><h2 id='syntax'>Syntax</h2><div class='syntax-box'><span class='syntax'>{$final}</span></div></div>";
     }
 }
 

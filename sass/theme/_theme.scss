@@ -74,6 +74,20 @@ p {
 	background-color: rgba($aqua,.1);
 }
 
+.syntax-box {
+	font-size: 1.4em;
+	background-color: $primary;
+	color: #fff;
+	padding: 10px 20px;
+	display: block;
+}
+
+.function-action {
+	color: $gold;
+	padding: 0 5px;
+}
+
+
 @include media-breakpoint-down(md) { 
 	.primary-gif {
 	width: 100%;
