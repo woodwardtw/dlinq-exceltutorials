@@ -34,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
+            "return_format": "array",
             "library": "all",
             "min_size": "",
             "max_size": "",
@@ -42,7 +42,7 @@
         },
         {
             "key": "field_6112d8ef5bd38",
-            "label": "Primary GIF",
+            "label": "Primary Animation",
             "name": "primary_gif",
             "type": "file",
             "instructions": "",
@@ -53,7 +53,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
+            "return_format": "array",
             "library": "all",
             "min_size": "",
             "max_size": "",
@@ -246,5 +246,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1633013383
+    "modified": 1633090003
 }

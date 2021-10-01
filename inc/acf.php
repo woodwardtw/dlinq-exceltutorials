@@ -48,8 +48,15 @@ function excel_header($field, $title){
 
 function excel_primary_gif(){
      if(get_field('primary_gif')){
-        $url = get_field('primary_gif');
-        return "<img src='{$url}' class='primary-gif'>";//may need to add modal link or direct file link
+        $file = get_field('primary_gif');
+        $url = $file['url'];
+        $type = $file['type'];
+        if($type == 'image' ){
+            return "<img src='{$url}' class='primary-gif'>";//may need to add modal link or direct file link
+        }
+        if($type == 'video'){
+            return "<video class='primary-gif' controls width='250' loop='true' autoplay='true'><source src='{$url}' type='video/mp4' ></video>";
+        }
     }
 }
 
