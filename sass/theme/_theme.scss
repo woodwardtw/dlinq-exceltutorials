@@ -88,6 +88,18 @@ p {
 	padding: 0 5px;
 }
 
+ul.downloads {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+li .btn-excel {
+	margin: 5px 0;
+	width: 400px;
+	text-align: center;
+}
+
 
 @include media-breakpoint-down(md) { 
 	.primary-gif {
