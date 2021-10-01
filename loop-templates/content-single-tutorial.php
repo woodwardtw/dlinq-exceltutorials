@@ -21,10 +21,10 @@ defined( 'ABSPATH' ) || exit;
 				<a href="#how-to">How To</a>
 				<a href="#uses">Uses</a>
 				<a href="#additional-examples">Examples</a>
-				<a href="#practice">Practice</a>
-				<a href="#conclusion">Conclusion</a>
-				<a href="#related-content">Related Content</a>
-			</div>
+<!-- 				<a href="#practice">Practice</a>
+ -->				<a href="#conclusion">Conclusion</a>
+<!-- 				<a href="#related-content">Related Content</a>
+ -->			</div>
 
 			<?php //understrap_posted_on(); ?>
 
@@ -46,6 +46,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php echo excel_syntax();?>
 		<?php echo excel_additional_examples();?>
+		<?php echo excel_header('conclusion', 'Conclusion');?>
 	
 		<?php //the_content(); ?>
 
