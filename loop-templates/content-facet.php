@@ -38,6 +38,7 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 			</div>
 			<div class="col-md-8">
+					<div class="row"><div class="col-md-12 facet-sort-box"><?php echo facetwp_display( 'sort' );?></div></div>
 					<?php echo facetwp_display( 'template', 'resources' );?>	
 			</div>
 			<div class="col-md-12">
