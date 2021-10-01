@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for facet view
+ * Partial template for face search facet-search.php
  *
  * @package UnderStrap
  */
@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title sr-only">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
 
@@ -22,15 +22,30 @@ defined( 'ABSPATH' ) || exit;
 	<div class="entry-content">
 
 		<?php the_content(); ?>
-
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+		<div class="row facet-row">
+			<div class="col-md-4">
+				<div class="facet-block">
+					<h2>Search</h2>
+					<?php echo facetwp_display( 'facet', 'search');?>	
+				</div>
+				<div class="facet-block">
+					<h2>Objective</h2>
+					<?php echo facetwp_display( 'facet', 'objective');?>	
+				</div>				
+				<div class="facet-block">
+					<h2>Course</h2>
+					<?php echo facetwp_display( 'facet', 'course');?>	
+				</div>
+			</div>
+			<div class="col-md-8">
+					<?php echo facetwp_display( 'template', 'resources' );?>	
+			</div>
+			<div class="col-md-12">
+				<?php echo do_shortcode('[facetwp pager="true"]') ;?>
+								<button class="btn btn-alp btn-dark" value="Reset" onclick="FWP.reset()" class="facet-reset" />Reset Filters</button>	
+				
+			</div>
+		</div>
 
 	</div><!-- .entry-content -->
 

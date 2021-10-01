@@ -239,11 +239,10 @@
         "author",
         "format",
         "page_attributes",
-        "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": true,
     "description": "",
-    "modified": 1633098403
+    "modified": 1633105360
 }
