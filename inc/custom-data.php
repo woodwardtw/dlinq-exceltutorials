@@ -74,3 +74,77 @@ function create_tutorial_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_tutorial_cpt', 0 );
+
+add_action( 'init', 'create_course_taxonomies', 0 );
+function create_course_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Courses', 'taxonomy general name' ),
+    'singular_name' => _x( 'course', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Courses' ),
+    'popular_items' => __( 'Popular Courses' ),
+    'all_items' => __( 'All Courses' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Courses' ),
+    'update_item' => __( 'Update course' ),
+    'add_new_item' => __( 'Add New course' ),
+    'new_item_name' => __( 'New course' ),
+    'add_or_remove_items' => __( 'Add or remove Courses' ),
+    'choose_from_most_used' => __( 'Choose from the most used Courses' ),
+    'menu_name' => __( 'course' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('Courses',array('tutorial'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'course' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'course',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => false,    
+  ));
+}
+
+add_action( 'init', 'create_objective_taxonomies', 0 );
+function create_objective_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Objectives', 'taxonomy general name' ),
+    'singular_name' => _x( 'objective', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Objectives' ),
+    'popular_items' => __( 'Popular Objectives' ),
+    'all_items' => __( 'All Objectives' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Objectives' ),
+    'update_item' => __( 'Update objective' ),
+    'add_new_item' => __( 'Add New objective' ),
+    'new_item_name' => __( 'New objective' ),
+    'add_or_remove_items' => __( 'Add or remove Objectives' ),
+    'choose_from_most_used' => __( 'Choose from the most used Objectives' ),
+    'menu_name' => __( 'objective' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('Objectives',array('tutorial'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'objective' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'objective',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => false,    
+  ));
+}
+
+
