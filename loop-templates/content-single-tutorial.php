@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="row tutorial">
 		<?php echo excel_header('introduction', 'Introduction');?>
