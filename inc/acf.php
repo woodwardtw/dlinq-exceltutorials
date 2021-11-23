@@ -26,7 +26,7 @@ function resource_image(){
 function excel_intro(){
     if(get_field('introduction')){
         $intro = get_field('introduction');
-        return "<div class='col-md-10 offset-md-1 introduction'>{$intro}</div>";
+        return "<div class='col-md-9 offset-md-2 introduction'>{$intro}</div>";
     }
 }
 
@@ -50,7 +50,7 @@ function excel_header($field, $title){
         } else {
             $img = '';
         }
-        return "<div class='col-md-10 offset-md-1 $clean'>
+        return "<div class='col-md-9 offset-md-2 $clean'>
                     <h2 id='{$clean}'>{$title}</h2>
                     {$img}{$text}
                 </div>

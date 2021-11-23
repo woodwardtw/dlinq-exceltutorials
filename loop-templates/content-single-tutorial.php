@@ -11,20 +11,11 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header col-md-10 offset-md-1">
+	<header class="entry-header col-md-9 offset-md-2">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<div class="tutorial-nav">
-				<a href="#intro">Intro</a>
-				<a href="#how-to">How To</a>
-				<a href="#uses">Uses</a>
-				<a href="#additional-examples">Examples</a>
-<!-- 				<a href="#practice">Practice</a>
- -->				<a href="#conclusion">Conclusion</a>
-<!-- 				<a href="#related-content">Related Content</a>
- -->			</div>
+		<div class="entry-meta">			
 
 			<?php //understrap_posted_on(); ?>
 
@@ -35,6 +26,17 @@ defined( 'ABSPATH' ) || exit;
 	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="row tutorial">
+		<div class="col-md-2">
+			<div class="tutorial-nav">
+				<a href="#intro">Intro</a>
+				<a href="#how-to">How To</a>
+				<a href="#uses">Uses</a>
+				<a href="#additional-examples">Examples</a>
+<!-- 				<a href="#practice">Practice</a>
+ -->				<a href="#conclusion">Conclusion</a>
+<!-- 				<a href="#related-content">Related Content</a>
+ -->			</div>
+		</div>		
 		<?php echo excel_header('introduction', 'Introduction');?>
 		<?php echo excel_example_file();?>
 		
