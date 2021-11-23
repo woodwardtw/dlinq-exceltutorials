@@ -14970,10 +14970,10 @@ p {
   padding: 20px;
 }
 
-.tutorial-nav a {
-  margin-right: 5px;
-  padding-right: 10px;
-  border-right: 1px solid #0c395f;
+.tutorial-nav {
+  position: fixed;
+  top: 150px;
+  left: 20px;
 }
 
 .tutorial-nav a:last-of-type {

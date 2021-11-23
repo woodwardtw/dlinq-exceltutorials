@@ -28,14 +28,14 @@ defined( 'ABSPATH' ) || exit;
 	<div class="row tutorial">
 		<div class="col-md-2">
 			<div class="tutorial-nav">
-				<a href="#intro">Intro</a>
-				<a href="#how-to">How To</a>
-				<a href="#uses">Uses</a>
-				<a href="#additional-examples">Examples</a>
-<!-- 				<a href="#practice">Practice</a>
- -->				<a href="#conclusion">Conclusion</a>
-<!-- 				<a href="#related-content">Related Content</a>
- -->			</div>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#how-to">How To</a></li>
+					<li><a href="#uses">Uses</a></li>
+					<li><a href="#additional-examples">Examples</a></li>
+					<li><a href="#conclusion">Conclusion</a></li>
+ 				</ul>	
+			</div>
 		</div>		
 		<?php echo excel_header('introduction', 'Introduction');?>
 		<?php echo excel_example_file();?>
