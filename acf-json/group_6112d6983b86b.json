@@ -236,6 +236,84 @@
                     "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_61a6229559b14",
+            "label": "How To Loop",
+            "name": "how_to_loop",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add direction block",
+            "sub_fields": [
+                {
+                    "key": "field_61a6235559b16",
+                    "label": "Subtitle",
+                    "name": "subtitle",
+                    "type": "text",
+                    "instructions": "If you add a subtitle it will add this portion to the navigation. You can leave it blank if you don't want that to happen.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61a6231d59b15",
+                    "label": "Media",
+                    "name": "media",
+                    "type": "file",
+                    "instructions": "Add video or images.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "jpg, jpeg, gif, mp4, mov, mpeg"
+                },
+                {
+                    "key": "field_61a623ae59b17",
+                    "label": "How to text",
+                    "name": "how_to_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
         }
     ],
     "location": [
@@ -269,5 +347,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1633115986
+    "show_in_rest": 0,
+    "modified": 1638278193
 }
