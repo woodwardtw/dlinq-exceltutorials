@@ -258,8 +258,8 @@
             "sub_fields": [
                 {
                     "key": "field_61a6235559b16",
-                    "label": "Subtitle",
-                    "name": "subtitle",
+                    "label": "Section Title",
+                    "name": "section_title",
                     "type": "text",
                     "instructions": "If you add a subtitle it will add this portion to the navigation. You can leave it blank if you don't want that to happen.",
                     "required": 0,
@@ -348,5 +348,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638278193
+    "modified": 1638279368
 }
