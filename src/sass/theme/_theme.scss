@@ -32,6 +32,11 @@ p, ul, ol {
 	font-family: 'Cabin', Sans-Serif;
 }
 
+ul, li {
+	display: block;
+	margin-left: 12px;
+}
+
 .tutorial {
 	padding: 20px;
 }
