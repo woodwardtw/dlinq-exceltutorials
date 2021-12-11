@@ -32,9 +32,15 @@ p, ul, ol {
 	font-family: 'Cabin', Sans-Serif;
 }
 
-ul, li {
+ul, ol {
 	display: block;
 	margin-left: 12px;
+}
+
+.big {
+	display: block;
+	height: 75vh;
+	background-color: red;
 }
 
 .tutorial {
@@ -45,6 +51,10 @@ ul, li {
 	position: fixed;
 	top: 150px;
 	left: 20px;
+}
+
+.tutorial-nav ul {
+	list-style-type: none;
 }
 
 .tutorial-nav a:last-of-type {
