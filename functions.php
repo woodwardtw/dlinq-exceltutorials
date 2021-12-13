@@ -78,6 +78,6 @@ function excel_configure_tinymce($in) {
 //add scroll spy to tutorial pages
 function excel_scrollspy(){
 	if(get_post_type() == 'tutorial'){
-		return 'data-spy="scroll" data-target="#navbar-example2" data-offset="10"';
+		return 'data-spy="scroll" data-target="#navbar-example2" data-offset="140"';
 	}
 }

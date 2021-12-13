@@ -30,13 +30,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="tutorial-nav">
 			<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">				
 				<ul class="nav nav-pills">
-					<li class="nav-item">
-					<a class="nav-link" href="#introduction">intro</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#how-to">how to</a>
-					</li>
-					<li><a class="nav-link" href="#conclusion">conclusion</a></li>						
+					<?php echo excel_nav_builder();?>					
 				</ul>
 				</nav>			
 			</div>			
@@ -46,6 +40,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php echo excel_example_file();?>
 			
 			<?php echo excel_header('how_to', 'How To');?>
+			<?php echo excel_how_to_loop();?>
 
 			<?php echo excel_header('apple_specific', 'Apple Specific');?>
 
