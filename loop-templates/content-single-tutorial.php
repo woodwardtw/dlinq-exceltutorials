@@ -28,43 +28,20 @@ defined( 'ABSPATH' ) || exit;
 	<div class="row tutorial">
 		<div class="col-md-2">
 			<div class="tutorial-nav">
-			<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading1">First</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">Second</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-				<nav id="scroll-nav" class="navbar navbar-light bg-light px-3">
-					<a class="navbar-brand" href="#">Intro</a>
-					<ul class="nav nav-pills">
-						<li class="nav-item">
-						<a class="nav-link" href="#how-to">How to</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#scrollspyHeading2">Second</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#apple-specific">Apple</a>      
-						</li>
-					</ul>
-				</nav>
+			<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">				
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+					<a class="nav-link" href="#introduction">intro</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#how-to">how to</a>
+					</li>
+					<li><a class="nav-link" href="#conclusion">conclusion</a></li>						
+				</ul>
+				</nav>			
 			</div>			
 		</div>		
-		<div data-bs-spy="scroll" data-bs-target="#scroll-nav">
+		<div>
 			<?php echo excel_header('introduction', 'Introduction');?>
 			<?php echo excel_example_file();?>
 			
@@ -80,18 +57,6 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 		<?php //the_content(); ?>
 
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-  <h4 id="scrollspyHeading1">First heading</h4>
-  <p class='big'>...</p>
-  <h4 id="scrollspyHeading2">Second heading</h4>
-  <p class='big'>...</p>
-  <h4 id="scrollspyHeading3">Third heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading4">Fourth heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading5">Fifth heading</h4>
-  <p>...</p>
-</div>
 
 		<?php
 		wp_link_pages(

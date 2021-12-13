@@ -73,3 +73,11 @@ function excel_configure_tinymce($in) {
   }";
   return $in;
 }
+
+
+//add scroll spy to tutorial pages
+function excel_scrollspy(){
+	if(get_post_type() == 'tutorial'){
+		return 'data-spy="scroll" data-target="#navbar-example2" data-offset="10"';
+	}
+}
