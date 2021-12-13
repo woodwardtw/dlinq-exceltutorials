@@ -70,12 +70,16 @@ function excel_how_to_loop(){
         if($rows){
             foreach( $rows as $key=>$row ) {
                 $title = $row['section_title'];
+                $full_title = '';
                 $slug = sanitize_title($title) . '-' . $key;
                 $media =  excel_generic_media($row['media']);
                 $body = $row['how_to_text'];                
-                if($title && $media && $body){
+                if($title){
+                    $full_title = "<h2 id='{$slug}'>{$title}</h2>";
+                }
+                if( $media && $body){
                     $html .= "<div class='row'><div class='col-md-9 offset-md-2'>
-                                <h2 id='{$slug}'>{$title}</h2>                               
+                                {$full_title}                               
                             </div>
                             <div class='col-md-6'>
                             {$media}
@@ -85,9 +89,20 @@ function excel_how_to_loop(){
                             </div></div>
                             ";
                 }
-                // if(){
-
-                // }
+                if($body && $media == '' || $media && $body == ''){
+                    if($media){
+                        $content = $media;
+                    } else {
+                        $content = $body;
+                    }
+                    $html .= "<div class='row'><div class='col-md-9 offset-md-2'>
+                                {$full_title}                               
+                            </div>
+                            <div class='col-md-9 offset-md-2'>   
+                            {$content}                        
+                            </div></div>
+                            ";
+                }
             }
         }
     return $html;

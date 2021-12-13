@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="row tutorial">
 		<div class="col-md-2">
 			<div class="tutorial-nav">
-			<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">				
+			<nav id="navbar-tutorial" class="navbar navbar-light bg-light px-3">				
 				<ul class="nav nav-pills">
 					<?php echo excel_nav_builder();?>					
 				</ul>

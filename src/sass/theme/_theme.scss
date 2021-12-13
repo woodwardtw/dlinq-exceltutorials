@@ -47,25 +47,42 @@ ul, ol {
 	padding: 20px;
 }
 
-.tutorial-nav {
+#navbar-tutorial {
 	position: fixed;
-	top: 150px;
 	left: 20px;
+	top:100px;
 }
 
-.tutorial-nav ul {
-	list-style-type: none;
+#navbar-tutorial ul.nav {
+	display: block;	
 }
 
-.tutorial-nav a:last-of-type {
-	border-right: 0;
-}
+// .tutorial-nav {
+// 	position: fixed;
+// 	top: 150px;
+// 	left: 20px;
+// }
+
+// .tutorial-nav ul {
+// 	list-style-type: none;
+// }
+
+// .tutorial-nav a:last-of-type {
+// 	border-right: 0;
+// }
 
 .primary-gif {
 	width: 50%;
 	height: auto;
 	margin: 30px 20px 20px 0;
 	float:left;
+}
+
+.generic-gif {
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+	display: block;
 }
 
 .how-to {
