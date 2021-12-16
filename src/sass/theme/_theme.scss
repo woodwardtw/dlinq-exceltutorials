@@ -9,6 +9,10 @@
 	max-width: 100%;
 }
 
+#main-nav {
+	border-bottom: 2px solid $aqua;
+}
+
 h1, h2, h3, h4, h5{
 	font-family: 'Roboto Condensed', Sans-Serif;
 	font-weight: 700;
@@ -55,6 +59,7 @@ ul, ol {
 	background-position: center center;
 	background-repeat: no-repeat;
 	border: 2px solid $primary;
+	box-shadow: 0px 2px $aqua;
 }
 
 .big {
@@ -74,6 +79,7 @@ ul, ol {
 	width: 100%;
     max-width: inherit;
     display: inline-block;
+	z-index: 100;
 }
 
 #navbar-tutorial ul.nav {
@@ -260,7 +266,7 @@ li .btn-excel {
 	margin-top: 80px;
 }
 
-@include media-breakpoint-down(md) { 
+@include media-breakpoint-down(sm) { 
 	.primary-gif {
 	width: 100%;
 	height: auto;

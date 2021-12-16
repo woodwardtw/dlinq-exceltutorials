@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 		
 			<?php echo excel_header('introduction', 'Introduction');?>
 			<?php echo excel_example_file();?>
-			
+</div>
 			<?php //echo excel_header('how_to', 'How To');?>
 			<?php echo excel_how_to_loop();?>
 

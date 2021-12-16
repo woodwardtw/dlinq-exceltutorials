@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php the_content(); ?>
 		<div class="row facet-row">
-			<div class="col-md-2">
+			<div class="col-md-3">
 				<div class="facet-block">
 					<h2>Search</h2>
 					<?php echo facetwp_display( 'facet', 'search');?>	
@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit;
 					<?php echo facetwp_display( 'facet', 'course');?>	
 				</div>
 			</div>
-			<div class="col-md-10">
+			<div class="col-md-9">
 					<div class="row"><div class="col-md-12 facet-sort-box"><?php echo facetwp_display( 'sort' );?></div></div>
 					<?php echo facetwp_display( 'template', 'resources' );?>	
 			</div>

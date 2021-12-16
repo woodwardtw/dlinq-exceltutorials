@@ -98,15 +98,17 @@ function excel_how_to_loop(){
                     $full_title = "<h2 id='{$slug}'>{$title}</h2>";
                 }
                 if( $media && $body){
-                    $html .= "<div class='row'><div class='col-md-9 offset-md-2'>
+                    $html .= "<div class='row'>
+                                <div class='col-md-9 offset-md-2'>
                                 {$full_title}                               
+                                </div>
+                                <div class='col-md-6'>
+                                    {$media}
+                                </div>
+                                <div class='col-md-6'>
+                                {$body}
+                                </div>
                             </div>
-                            <div class='col-md-6'>
-                            {$media}
-                            </div>
-                            <div class='col-md-6'>
-                            {$body}
-                            </div></div>
                             ";
                 }
                 if($body && $media == '' || $media && $body == ''){
@@ -115,12 +117,14 @@ function excel_how_to_loop(){
                     } else {
                         $content = $body;
                     }
-                    $html .= "<div class='row'><div class='col-md-9 offset-md-2'>
-                                {$full_title}                               
+                    $html .= "<div class='row'>
+                                <div class='col-md-9 offset-md-2'>
+                                    {$full_title}                               
+                                </div>
+                                <div class='col-md-9 offset-md-2'>   
+                                    {$content}                        
+                                </div>
                             </div>
-                            <div class='col-md-9 offset-md-2'>   
-                            {$content}                        
-                            </div></div>
                             ";
                 }
             }
