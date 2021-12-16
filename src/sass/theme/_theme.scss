@@ -51,8 +51,9 @@ ul, ol {
 	position: fixed;
 	left: 20px;
 	top: 100px;
-	width:inherit;
-    max-width:inherit;
+	width: 100%;
+    max-width: inherit;
+    display: inline-block;
 }
 
 #navbar-tutorial ul.nav {
@@ -62,7 +63,16 @@ ul, ol {
 
 #navbar-tutorial li {
 	line-height: 1.2;
-	border-bottom: 1px solid $gold;
+	border-bottom: 1px solid $aqua;
+	font-size: .8em;
+}
+
+#navbar-tutorial li:last-of-type{
+	border-bottom: none;
+}
+
+#navbar-tutorial .nav-link {
+	border-radius: 0;
 }
 
 // .tutorial-nav {
@@ -220,5 +230,9 @@ li .btn-excel {
 	height: auto;
 	margin: 20px 0;	
 	}
-
+	#navbar-tutorial {
+		position: relative;
+		left: auto;
+		top: auto;
+	}
  }

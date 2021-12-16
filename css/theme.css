@@ -14985,8 +14985,9 @@ ul, ol {
   position: fixed;
   left: 20px;
   top: 100px;
-  width: inherit;
+  width: 100%;
   max-width: inherit;
+  display: inline-block;
 }
 
 #navbar-tutorial ul.nav {
@@ -14996,7 +14997,16 @@ ul, ol {
 
 #navbar-tutorial li {
   line-height: 1.2;
-  border-bottom: 1px solid #F4B824;
+  border-bottom: 1px solid #1F9F8B;
+  font-size: 0.8em;
+}
+
+#navbar-tutorial li:last-of-type {
+  border-bottom: none;
+}
+
+#navbar-tutorial .nav-link {
+  border-radius: 0;
 }
 
 .primary-gif {
@@ -15137,6 +15147,12 @@ li .btn-excel {
     width: 100%;
     height: auto;
     margin: 20px 0;
+  }
+
+  #navbar-tutorial {
+    position: relative;
+    left: auto;
+    top: auto;
   }
 }
 

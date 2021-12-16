@@ -44,7 +44,7 @@ function excel_example_file(){
 function excel_nav_builder(){
     $rows = get_field('how_to_loop');
     $html = '';
-    $html .= excel_sidebar_nav_li('introduction', 'Introduction');
+    $html .= excel_sidebar_nav_li_alt('introduction', 'Introduction');
         if($rows){
             foreach( $rows as $key=>$row ) {
                 $title = $row['section_title'];
@@ -54,17 +54,34 @@ function excel_nav_builder(){
                 // $body = $row[''];
             }
         }
+    $html .= excel_sidebar_nav_li_alt('apple_specific', 'Apple Specific');
+    $html .= excel_sidebar_nav_li_alt('uses', 'Uses');
+    $html .= excel_sidebar_nav_li_alt('formula_syntax', 'Formula Syntax');
+    $html .= excel_sidebar_nav_li_alt('conclusion', 'Conclusion');
+    $html .= excel_sidebar_nav_li_alt('example_files', 'Example Files');
+
     return $html;
 }
+
+
 
 function excel_sidebar_nav_li($slug, $title){
     if($title != ''){
         return "<li class='nav-item'>
-            <a class='nav-link' href='#{$slug}'>{$title}</a>
-          </li>";          
+                <a class='nav-link' href='#{$slug}'>{$title}</a>
+             </li>";          
     }
-
 }
+
+function excel_sidebar_nav_li_alt($slug, $title){
+    $div_id = sanitize_title($title);
+    if($title != '' && get_field($slug)){
+        return "<li class='nav-item'>
+                <a class='nav-link' href='#{$div_id}'>{$title}</a>
+             </li>";          
+    }
+}
+
 
 
 function excel_how_to_loop(){

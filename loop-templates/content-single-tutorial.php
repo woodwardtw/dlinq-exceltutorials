@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="row tutorial">
 	<div class="tutorial-nav navbar fixed-left col-md-2">		
-		<nav id="navbar-tutorial" class="navbar navbar-light bg-light px-3" id="navbarsExampleDefault">				
+		<nav id="navbar-tutorial" class="navbar navbar-light bg-light">				
 			<ul class="nav nav-pills" >
 				<?php echo excel_nav_builder();?>					
 			</ul>
@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php echo excel_header('introduction', 'Introduction');?>
 			<?php echo excel_example_file();?>
 			
-			<?php echo excel_header('how_to', 'How To');?>
+			<?php //echo excel_header('how_to', 'How To');?>
 			<?php echo excel_how_to_loop();?>
 
 			<?php echo excel_header('apple_specific', 'Apple Specific');?>
