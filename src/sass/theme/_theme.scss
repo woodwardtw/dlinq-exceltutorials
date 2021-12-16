@@ -194,20 +194,27 @@ li .btn-excel {
 	margin: 20px 20px 20px 0;
 }
 
-.facet-block h2:after {
-  background-color: $primary;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  vertical-align: middle;
-  width: 100%;
+.facet-block h2 {
+	display: block;
 }
 
-.facet-block h2:after {
-  left: 0.5em;
-  margin-right: -50%;
+.facet-block .facetwp-facet input.facetwp-search, .facet-block .facetwp-facet input.facetwp-location {
+	min-width: 100%;
 }
+// .facet-block h2:after {
+//   background-color: $primary;
+//   content: "";
+//   display: inline-block;
+//   height: 2px;
+//   position: relative;
+//   vertical-align: middle;
+//   width: 100%;
+// }
+
+// .facet-block h2:after {
+//   left: 0.5em;
+//   margin-right: -50%;
+// }
 
 .facetwp-type-checkboxes {
 	margin-left: 15px;
@@ -248,6 +255,10 @@ li .btn-excel {
 	text-align: right;
 }
 
+
+.post-navigation {
+	margin-top: 80px;
+}
 
 @include media-breakpoint-down(md) { 
 	.primary-gif {

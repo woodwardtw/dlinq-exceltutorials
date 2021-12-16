@@ -15109,19 +15109,12 @@ li .btn-excel {
   margin: 20px 20px 20px 0;
 }
 
-.facet-block h2:after {
-  background-color: #0c395f;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  vertical-align: middle;
-  width: 100%;
+.facet-block h2 {
+  display: block;
 }
 
-.facet-block h2:after {
-  left: 0.5em;
-  margin-right: -50%;
+.facet-block .facetwp-facet input.facetwp-search, .facet-block .facetwp-facet input.facetwp-location {
+  min-width: 100%;
 }
 
 .facetwp-type-checkboxes {
@@ -15162,6 +15155,10 @@ li .btn-excel {
   width: 100%;
   margin: 0 15px 20px 0;
   text-align: right;
+}
+
+.post-navigation {
+  margin-top: 80px;
 }
 
 @media (max-width: 991.98px) {
