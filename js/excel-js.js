@@ -17,7 +17,7 @@ jQuery(document).on('click', 'a[href^="#"]', function(e) {
    // e.preventDefault();
 
     // top position relative to the document
-    var pos = $id.offset().top;
+    var pos = $id.offset().top-50;
 
     // animated top scrolling
     jQuery('body, html').animate({scrollTop: pos});
