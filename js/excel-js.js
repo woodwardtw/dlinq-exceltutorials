@@ -13,8 +13,8 @@ jQuery(document).on('click', 'a[href^="#"]', function(e) {
         return;
     }
 
-    // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
+    // opted to leave it so that links could be shared more intuitively 
+   // e.preventDefault();
 
     // top position relative to the document
     var pos = $id.offset().top;

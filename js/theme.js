@@ -9978,6 +9978,9 @@
     }
   })();
 
+  // Add your JS customizations here
+  console.log('custom?');
+
   exports.Alert = Alert;
   exports.Button = Button;
   exports.Carousel = Carousel;
