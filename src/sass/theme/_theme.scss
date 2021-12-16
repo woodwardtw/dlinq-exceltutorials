@@ -50,11 +50,19 @@ ul, ol {
 #navbar-tutorial {
 	position: fixed;
 	left: 20px;
-	top:100px;
+	top: 100px;
+	width:inherit;
+    max-width:inherit;
 }
 
 #navbar-tutorial ul.nav {
 	display: block;	
+	margin-left: 0;
+}
+
+#navbar-tutorial li {
+	line-height: 1.2;
+	border-bottom: 1px solid $gold;
 }
 
 // .tutorial-nav {

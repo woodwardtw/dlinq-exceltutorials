@@ -58,9 +58,12 @@ function excel_nav_builder(){
 }
 
 function excel_sidebar_nav_li($slug, $title){
-return "<li class='nav-item'>
+    if($title != ''){
+        return "<li class='nav-item'>
             <a class='nav-link' href='#{$slug}'>{$title}</a>
           </li>";          
+    }
+
 }
 
 

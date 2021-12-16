@@ -26,15 +26,14 @@ defined( 'ABSPATH' ) || exit;
 	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="row tutorial">
-		<div class="col-md-2">
-			<div class="tutorial-nav">
-			<nav id="navbar-tutorial" class="navbar navbar-light bg-light px-3">				
-				<ul class="nav nav-pills">
-					<?php echo excel_nav_builder();?>					
-				</ul>
-				</nav>			
-			</div>			
-		</div>		
+	<div class="tutorial-nav navbar fixed-left col-md-2">		
+		<nav id="navbar-tutorial" class="navbar navbar-light bg-light px-3" id="navbarsExampleDefault">				
+			<ul class="nav nav-pills" >
+				<?php echo excel_nav_builder();?>					
+			</ul>
+		</nav>	
+	</div>
+		
 			<?php echo excel_header('introduction', 'Introduction');?>
 			<?php echo excel_example_file();?>
 			
