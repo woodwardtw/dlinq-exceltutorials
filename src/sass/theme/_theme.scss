@@ -37,6 +37,22 @@ ul, ol {
 	margin-left: 12px;
 }
 
+#happy-excel {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 50%;
+	right: 50%;
+	top: 10px;
+	background-image: url(../imgs/excel.svg);
+	background-color: $white;
+	border-radius: 50%;
+	background-size: 80px 80px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 2px solid $primary;
+}
+
 .big {
 	display: block;
 	height: 75vh;

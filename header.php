@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
 						<?php endif; ?>
-
+					    <div id="happy-excel"></div>
 						<?php
 					} else {
 						the_custom_logo();
