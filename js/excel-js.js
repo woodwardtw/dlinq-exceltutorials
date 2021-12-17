@@ -22,3 +22,9 @@ jQuery(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     jQuery('body, html').animate({scrollTop: pos});
 });
+
+
+jQuery('#tutorial-btn-expand-collapse').click(function(e) {
+    console.log('clack')
+    jQuery('#navbar-tutorial').toggleClass('collapsed');
+});
