@@ -14964,6 +14964,7 @@ h2 {
   box-shadow: 5px 5px #1F9F8B;
   padding: 10px 20px;
   border: 1px solid #1F9F8B;
+  background-color: #fff;
 }
 
 p, ul, ol {
@@ -15049,6 +15050,8 @@ ul, ol {
   height: auto;
   margin: 30px auto;
   display: block;
+  border: 5px solid #f5f5fb;
+  outline: 1px solid #1F9F8B;
 }
 
 .how-to {
@@ -15111,7 +15114,6 @@ li .btn-excel {
 }
 
 .facet-block {
-  overflow: hidden;
   margin: 20px 20px 20px 0;
 }
 

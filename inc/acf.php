@@ -98,7 +98,7 @@ function excel_how_to_loop(){
                     $full_title = "<h2 id='{$slug}'>{$title}</h2>";
                 }
                 if( $media && $body){
-                    $html .= "<div class='row'>
+                    $html .= "<div class='row tutorial-row'>
                                 <div class='col-md-9 offset-md-2'>
                                 {$full_title}                               
                                 </div>
@@ -117,7 +117,7 @@ function excel_how_to_loop(){
                     } else {
                         $content = $body;
                     }
-                    $html .= "<div class='row'>
+                    $html .= "<div class='row  tutorial-row'>
                                 <div class='col-md-9 offset-md-2'>
                                     {$full_title}                               
                                 </div>
