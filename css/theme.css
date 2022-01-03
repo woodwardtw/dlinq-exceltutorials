@@ -15004,8 +15004,13 @@ ul, ol {
   padding: 20px;
 }
 
+.tutorial-row {
+  padding: 30px 10px;
+  margin-top: 40px;
+}
+
 .tutorial-row:nth-child(odd) {
-  background-color: #efefef;
+  background-color: rgba(31, 159, 139, 0.2);
 }
 
 #tutorial-btn-expand-collapse {
