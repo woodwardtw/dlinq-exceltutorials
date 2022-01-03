@@ -1,6 +1,4 @@
-console.log('mmmmm')
-
-//smooth scroll
+// smooth scroll
 // handle links with @href started with '#' only
 jQuery(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
@@ -27,4 +25,10 @@ jQuery(document).on('click', 'a[href^="#"]', function(e) {
 jQuery('#tutorial-btn-expand-collapse').click(function(e) {
     console.log('clack')
     jQuery('#navbar-tutorial').toggleClass('collapsed');
+    let button = document.querySelector('#tutorial-btn-expand-collapse');
+    if(button.innerHTML === 'x'){
+        button.innerHTML = '+'
+    } else {
+        button.innerHTML = 'x'
+    }
 });

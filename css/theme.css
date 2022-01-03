@@ -15004,6 +15004,23 @@ ul, ol {
   padding: 20px;
 }
 
+#tutorial-btn-expand-collapse {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5px;
+  margin-bottom: 4px;
+  margin-left: auto;
+  display: block;
+  border: 1px solid #1F9F8B;
+  transition: all 0.3s ease;
+}
+
+#tutorial-btn-expand-collapse:hover {
+  background-color: #1F9F8B;
+}
+
 #navbar-tutorial {
   position: fixed;
   left: 20px;
@@ -15016,8 +15033,8 @@ ul, ol {
 }
 
 #navbar-tutorial.collapsed {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
 }
 
