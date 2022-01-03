@@ -73,6 +73,11 @@ ul, ol {
 	padding: 20px;
 }
 
+.tutorial-row:nth-child(odd){
+	background-color: #efefef;
+}
+
+
 #tutorial-btn-expand-collapse {
 	width: 25px;
     height: 25px;
@@ -172,8 +177,8 @@ ul, ol {
 	height: auto;
 	margin: 30px auto;
 	display: block;
-	border: 5px solid #f5f5fb;
-    outline: 1px solid $aqua;
+	border: 5px solid #fff;
+    outline: 2px solid $aqua;
 }
 
 .how-to {
