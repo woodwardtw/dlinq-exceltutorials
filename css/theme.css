@@ -15067,13 +15067,17 @@ ul, ol {
   margin-left: 0;
 }
 
+#navbar-tutorial .nav ul.secondary {
+  margin-left: 10px;
+}
+
 #navbar-tutorial li {
   line-height: 1.2;
   border-bottom: 1px solid #1F9F8B;
-  font-size: 0.8em;
+  font-size: 14pt;
 }
 
-#navbar-tutorial li:last-of-type {
+#navbar-tutorial.primary li:last-of-type {
   border-bottom: none;
 }
 

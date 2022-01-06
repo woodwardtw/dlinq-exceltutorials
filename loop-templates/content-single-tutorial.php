@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="tutorial-nav navbar fixed-left col-md-2">		
 		<nav id="navbar-tutorial" class="navbar navbar-light bg-light">
 			<button id="tutorial-btn-expand-collapse"  aria-controls="navbar-tutorial" aria-expanded="true">x</button>				
-			<ul class="nav nav-pills" >
+			<ul class="nav nav-pills primary" >
 				<?php echo excel_nav_builder();?>					
 			</ul>
 		</nav>

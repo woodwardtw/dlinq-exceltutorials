@@ -46,6 +46,7 @@ function excel_nav_builder(){
     $html = '';
     $html .= excel_sidebar_nav_li_alt('introduction', 'Introduction');
         if($rows){
+            $html .= '<li class="nav-item"><a class="nav-link" href="#functions">Functions</a></li><ul class="secondary nav nav-pills">';
             foreach( $rows as $key=>$row ) {
                 $title = $row['section_title'];
                 $slug = sanitize_title($title) . '-' . $key;
@@ -53,10 +54,11 @@ function excel_nav_builder(){
                 // $media = $row[''];
                 // $body = $row[''];
             }
+            $html .= '</ul>';
         }
-    $html .= excel_sidebar_nav_li_alt('apple_specific', 'Apple Specific');
+    // $html .= excel_sidebar_nav_li_alt('apple_specific', 'Apple Specific');
     $html .= excel_sidebar_nav_li_alt('uses', 'Uses');
-    $html .= excel_sidebar_nav_li_alt('formula_syntax', 'Formula Syntax');
+    // $html .= excel_sidebar_nav_li_alt('formula_syntax', 'Formula Syntax');
     $html .= excel_sidebar_nav_li_alt('conclusion', 'Conclusion');
     $html .= excel_sidebar_nav_li_alt('example_files', 'Example Files');
 
