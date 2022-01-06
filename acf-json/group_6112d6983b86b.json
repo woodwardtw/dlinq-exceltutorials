@@ -162,44 +162,6 @@
             "delay": 0
         },
         {
-            "key": "field_6112d95680121",
-            "label": "Apple Specific",
-            "name": "apple_specific",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_6154aab502402",
-            "label": "Formula Syntax Example",
-            "name": "formula_syntax",
-            "type": "text",
-            "instructions": "Enter the full function including the equal sign.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_6112d96b1235c",
             "label": "Conclusion",
             "name": "conclusion",
@@ -310,5 +272,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639680903
+    "modified": 1641494769
 }

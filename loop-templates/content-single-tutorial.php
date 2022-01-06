@@ -36,17 +36,17 @@ defined( 'ABSPATH' ) || exit;
 	</div>
 		
 			<?php echo excel_header('introduction', 'Introduction');?>
+			
 			<?php echo excel_example_file();?>
 </div>
 			<?php //echo excel_header('how_to', 'How To');?>
+			
 			<?php echo excel_how_to_loop();?>
-
-			<?php echo excel_header('apple_specific', 'Apple Specific');?>
 
 			<?php echo excel_header('uses', 'Uses');?>
 
-			<?php echo excel_syntax();?>
 			<?php echo excel_additional_examples();?>
+
 			<?php echo excel_header('conclusion', 'Conclusion');?>
 		<?php //the_content(); ?>
 

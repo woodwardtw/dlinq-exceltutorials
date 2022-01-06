@@ -191,16 +191,18 @@ ul, ol {
 }
 
 .btn-excel {
-	margin: 20px auto;
 	border-radius: 30px;
 	padding: 15px;
 	font-size: 1.2em;
 	transition: all .3s ease;
+	display: block;
+    margin: 40px auto;
+    max-width: 300px;
 }
 
 .btn-excel:hover {
 	background-color: $aqua;
-	color: $primary;
+	color: $white;
 	border: $aqua 1px solid;
 }
 
