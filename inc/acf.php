@@ -42,12 +42,13 @@ function excel_example_file(){
 }
 
 function excel_nav_builder(){
-    $rows = get_field('how_to_loop');
+    $functions = get_field('how_to_loop');
+    $uses = get_field('uses_loop');
     $html = '';
     $html .= excel_sidebar_nav_li_alt('introduction', 'Introduction');
-        if($rows){
+        if($functions){
             $html .= '<li class="nav-item"><a class="nav-link" href="#functions">Functions</a></li><ul class="secondary nav nav-pills">';
-            foreach( $rows as $key=>$row ) {
+            foreach( $functions as $key=>$row ) {
                 $title = $row['section_title'];
                 $slug = sanitize_title($title) . '-' . $key;
                 $html .= excel_sidebar_nav_li($slug, $title);
@@ -56,8 +57,19 @@ function excel_nav_builder(){
             }
             $html .= '</ul>';
         }
+        if($uses){
+            $html .= '<li class="nav-item"><a class="nav-link" href="#uses">Uses</a></li><ul class="secondary nav nav-pills">';
+            foreach( $uses as $key=>$use ) {
+                $title = $use['section_title'];
+                $slug = sanitize_title($title) . '-' . $key;
+                $html .= excel_sidebar_nav_li($slug, $title);
+                // $media = $row[''];
+                // $body = $row[''];
+            }
+            $html .= '</ul>';
+        }
     // $html .= excel_sidebar_nav_li_alt('apple_specific', 'Apple Specific');
-    $html .= excel_sidebar_nav_li_alt('uses', 'Uses');
+    //$html .= excel_sidebar_nav_li_alt('uses', 'Uses');
     // $html .= excel_sidebar_nav_li_alt('formula_syntax', 'Formula Syntax');
     $html .= excel_sidebar_nav_li_alt('conclusion', 'Conclusion');
     $html .= excel_sidebar_nav_li_alt('example_files', 'Example Files');
@@ -135,6 +147,54 @@ function excel_how_to_loop(){
     return $html;
 }
 
+function excel_uses_loop(){
+    $rows = get_field('uses_loop');
+    $html = '';
+        if($rows){
+            $html .= '<div class="row"><div class="col-md-9 offset-md-2"><h1 id="uses">Uses</h1></div></div>';
+            foreach( $rows as $key=>$row ) {
+                $title = $row['section_title'];
+                $full_title = '';
+                $slug = sanitize_title($title) . '-' . $key;
+                $media =  excel_generic_media($row['media']);
+                $body = $row['how_to_text'];                
+                if($title){
+                    $full_title = "<h2 id='{$slug}'>{$title}</h2>";
+                }
+                if( $media && $body){
+                    $html .= "<div class='row tutorial-row'>
+                                <div class='col-md-9 offset-md-2'>
+                                {$full_title}                               
+                                </div>
+                                <div class='col-md-6'>
+                                    {$media}
+                                </div>
+                                <div class='col-md-6'>
+                                {$body}
+                                </div>
+                            </div>
+                            ";
+                }
+                if($body && $media == '' || $media && $body == ''){
+                    if($media){
+                        $content = $media;
+                    } else {
+                        $content = $body;
+                    }
+                    $html .= "<div class='row  tutorial-row'>
+                                <div class='col-md-9 offset-md-2'>
+                                    {$full_title}                               
+                                </div>
+                                <div class='col-md-9 offset-md-2'>   
+                                    {$content}                        
+                                </div>
+                            </div>
+                            ";
+                }
+            }
+        }
+    return $html;
+}
 
 
 function excel_header($field, $title){

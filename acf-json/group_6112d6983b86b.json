@@ -66,7 +66,7 @@
         },
         {
             "key": "field_61a6229559b14",
-            "label": "How To Loop",
+            "label": "Functions Loop",
             "name": "how_to_loop",
             "type": "repeater",
             "instructions": "",
@@ -143,10 +143,10 @@
             ]
         },
         {
-            "key": "field_6113cdcd14a80",
-            "label": "Uses",
-            "name": "uses",
-            "type": "wysiwyg",
+            "key": "field_61e6f30a49c52",
+            "label": "Uses Loop",
+            "name": "uses_loop",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -155,11 +155,70 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add direction block",
+            "sub_fields": [
+                {
+                    "key": "field_61e6f30a49c53",
+                    "label": "Section Title",
+                    "name": "section_title",
+                    "type": "text",
+                    "instructions": "If you add a subtitle it will add this portion to the navigation. You can leave it blank if you don't want that to happen.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61e6f30a49c54",
+                    "label": "Media",
+                    "name": "media",
+                    "type": "file",
+                    "instructions": "Add video or images.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "jpg, jpeg, gif, mp4, mov, mpeg"
+                },
+                {
+                    "key": "field_61e6f30a49c55",
+                    "label": "How to text",
+                    "name": "how_to_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
         },
         {
             "key": "field_6112d96b1235c",
@@ -272,5 +331,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641494769
+    "modified": 1642686141
 }

@@ -43,7 +43,9 @@ defined( 'ABSPATH' ) || exit;
 			
 			<?php echo excel_how_to_loop();?>
 
-			<?php echo excel_header('uses', 'Uses');?>
+			<?php //echo excel_header('uses', 'Uses');?>
+
+			<?php echo excel_uses_loop();?>
 
 			<?php echo excel_additional_examples();?>
 
