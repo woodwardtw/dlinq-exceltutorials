@@ -102,7 +102,7 @@ function excel_how_to_loop(){
     $rows = get_field('how_to_loop');
     $html = '';
         if($rows){
-            $html .= '<div class="row"><div class="col-md-9 offset-md-2"><h1 id="functions">Functions</h1></div></div>';
+            $html .= '<div class="row"><div class="col-md-9 offset-md-2"><h2 id="functions">Functions</h2></div></div>';
             foreach( $rows as $key=>$row ) {
                 $title = $row['section_title'];
                 $full_title = '';
@@ -110,7 +110,7 @@ function excel_how_to_loop(){
                 $media =  excel_generic_media($row['media']);
                 $body = $row['how_to_text'];                
                 if($title){
-                    $full_title = "<h2 id='{$slug}'>{$title}</h2>";
+                    $full_title = "<h3 id='{$slug}'> &#x279F; {$title}</h3>";
                 }
                 if( $media && $body){
                     $html .= "<div class='row tutorial-row'>
@@ -151,7 +151,7 @@ function excel_uses_loop(){
     $rows = get_field('uses_loop');
     $html = '';
         if($rows){
-            $html .= '<div class="row"><div class="col-md-9 offset-md-2"><h1 id="uses">Uses</h1></div></div>';
+            $html .= '<div class="row"><div class="col-md-9 offset-md-2"><h2 id="uses">Uses</h2></div></div>';
             foreach( $rows as $key=>$row ) {
                 $title = $row['section_title'];
                 $full_title = '';
@@ -159,7 +159,7 @@ function excel_uses_loop(){
                 $media =  excel_generic_media($row['media']);
                 $body = $row['how_to_text'];                
                 if($title){
-                    $full_title = "<h2 id='{$slug}'>{$title}</h2>";
+                    $full_title = "<h3 id='{$slug}'>&#x279F; {$title}</h3>";
                 }
                 if( $media && $body){
                     $html .= "<div class='row tutorial-row'>
