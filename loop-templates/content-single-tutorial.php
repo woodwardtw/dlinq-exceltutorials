@@ -45,6 +45,8 @@ defined( 'ABSPATH' ) || exit;
 			<?php echo excel_uses_loop();?>
 
 			<?php echo excel_additional_examples();?>
+			
+			<?php echo excel_header('practice', 'Practice');?>
 
 			<?php echo excel_header('conclusion', 'Conclusion');?>
 		<?php //the_content(); ?>

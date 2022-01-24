@@ -70,7 +70,7 @@ function excel_nav_builder(){
         }
     // $html .= excel_sidebar_nav_li_alt('apple_specific', 'Apple Specific');
     //$html .= excel_sidebar_nav_li_alt('uses', 'Uses');
-    // $html .= excel_sidebar_nav_li_alt('formula_syntax', 'Formula Syntax');
+    $html .= excel_sidebar_nav_li_alt('practice', 'Practice');
     $html .= excel_sidebar_nav_li_alt('conclusion', 'Conclusion');
     $html .= excel_sidebar_nav_li_alt('example_files', 'Example Files');
 

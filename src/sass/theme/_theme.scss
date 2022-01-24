@@ -323,6 +323,9 @@ li .btn-excel {
 	text-align: right;
 }
 
+.offset-md-2 p {
+	margin-left: 20px;
+}
 
 .post-navigation {
 	margin-top: 80px;
@@ -341,5 +344,8 @@ li .btn-excel {
 	}
 	.card a {
 		font-size: 7vw;
+	}
+	.offset-md-2 p {
+		margin-left: 0;
 	}
  }

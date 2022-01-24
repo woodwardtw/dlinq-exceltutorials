@@ -221,6 +221,25 @@
             ]
         },
         {
+            "key": "field_61eef052de42c",
+            "label": "Practice",
+            "name": "practice",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_6112d96b1235c",
             "label": "Conclusion",
             "name": "conclusion",
@@ -331,5 +350,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642686141
+    "modified": 1643049068
 }
