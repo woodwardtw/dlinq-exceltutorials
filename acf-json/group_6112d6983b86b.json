@@ -127,25 +127,6 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_61a6231d59b15",
-                    "label": "Media",
-                    "name": "media",
-                    "type": "file",
-                    "instructions": "Add video or images.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": "jpg, jpeg, gif, mp4, mov, mpeg"
-                },
-                {
                     "key": "field_61a623ae59b17",
                     "label": "How to text",
                     "name": "how_to_text",
@@ -163,6 +144,25 @@
                     "toolbar": "basic",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_61a6231d59b15",
+                    "label": "Media",
+                    "name": "media",
+                    "type": "file",
+                    "instructions": "Add video or images.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "jpg, jpeg, gif, mp4, mov, mpeg"
                 }
             ]
         },
@@ -205,25 +205,6 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_61a6231d59b15",
-                    "label": "Media",
-                    "name": "media",
-                    "type": "file",
-                    "instructions": "Add video or images.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": "jpg, jpeg, gif, mp4, mov, mpeg"
-                },
-                {
                     "key": "field_61a623ae59b17",
                     "label": "How to text",
                     "name": "how_to_text",
@@ -241,6 +222,25 @@
                     "toolbar": "basic",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_61a6231d59b15",
+                    "label": "Media",
+                    "name": "media",
+                    "type": "file",
+                    "instructions": "Add video or images.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "jpg, jpeg, gif, mp4, mov, mpeg"
                 }
             ]
         },
@@ -534,6 +534,38 @@
                     "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_62013dd448343",
+            "label": "Previous Link",
+            "name": "previous_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62013de948344",
+            "label": "Next Link",
+            "name": "next_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -568,5 +600,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644247722
+    "modified": 1644248568
 }
