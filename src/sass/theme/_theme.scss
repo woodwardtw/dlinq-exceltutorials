@@ -29,10 +29,10 @@ h2 {
 	font-size: 2.5em;
 	// border-left: 5px solid $aqua;
 	// padding-left: 20px;
-	display: inline-block;
-	box-shadow: 5px 5px $aqua;
-	padding: 10px 20px;
-	border: 1px solid $aqua;
+	// display: inline-block;
+	// box-shadow: 5px 5px $aqua;
+	// padding: 10px 20px;
+	// border: 1px solid $aqua;
 	background-color: $white;
 }
 
@@ -78,9 +78,9 @@ ul, ol {
 	margin-top: 40px;
 }
 
-.tutorial-row:nth-child(odd){
-	background-color: rgba($aqua,.2);
-}
+// .tutorial-row:nth-child(odd){
+// 	background-color: rgba($aqua,.2);
+// }
 
 #functions, #uses {
 	font-size: 2.8em;
@@ -106,13 +106,13 @@ ul, ol {
 }
 
 #navbar-tutorial {
-	position: fixed;
-	left: 20px;
-	top: 100px;
-	width: 100%;
-    max-width: inherit;
-    display: inline-block;
-	z-index: 100;
+	// position: fixed;
+	// left: 20px;
+	// top: 100px;
+	// width: 100%;
+    // max-width: inherit;
+    // display: inline-block;
+	// z-index: 100;
 	transition: all .3s ease;
 }
 
@@ -140,6 +140,7 @@ ul, ol {
 #navbar-tutorial ul.nav {
 	display: block;	
 	margin-left: 0;
+	width: 100%;
 }
 
 #navbar-tutorial .nav ul.secondary {

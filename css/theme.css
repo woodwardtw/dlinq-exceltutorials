@@ -14960,10 +14960,6 @@ h2 {
   margin-bottom: 25px;
   margin-top: 50px;
   font-size: 2.5em;
-  display: inline-block;
-  box-shadow: 5px 5px #1F9F8B;
-  padding: 10px 20px;
-  border: 1px solid #1F9F8B;
   background-color: #fff;
 }
 
@@ -15009,10 +15005,6 @@ ul, ol {
   margin-top: 40px;
 }
 
-.tutorial-row:nth-child(odd) {
-  background-color: rgba(31, 159, 139, 0.2);
-}
-
 #functions, #uses {
   font-size: 2.8em;
   margin: 50px 0 0 10px;
@@ -15036,13 +15028,6 @@ ul, ol {
 }
 
 #navbar-tutorial {
-  position: fixed;
-  left: 20px;
-  top: 100px;
-  width: 100%;
-  max-width: inherit;
-  display: inline-block;
-  z-index: 100;
   transition: all 0.3s ease;
 }
 
@@ -15070,6 +15055,7 @@ ul, ol {
 #navbar-tutorial ul.nav {
   display: block;
   margin-left: 0;
+  width: 100%;
 }
 
 #navbar-tutorial .nav ul.secondary {

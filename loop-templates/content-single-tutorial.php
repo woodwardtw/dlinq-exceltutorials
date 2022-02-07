@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="row tutorial-row">
-	<div class="tutorial-nav navbar fixed-left col-md-2">		
+	<div class="tutorial-nav fixed-left col-md-2">		
 		<nav id="navbar-tutorial" class="navbar navbar-light bg-light">
 			<button id="tutorial-btn-expand-collapse"  aria-controls="navbar-tutorial" aria-expanded="true">x</button>				
 			<ul class="nav nav-pills primary" >
@@ -34,11 +34,11 @@ defined( 'ABSPATH' ) || exit;
 			</ul>
 		</nav>
 	</div>
+	<div class="col-md-10">
 		
 			<?php echo excel_header('introduction', 'Introduction');?>
 			
 			<?php echo excel_example_file();?>
-</div>
 			
 			<?php echo excel_how_to_loop();?>
 
@@ -49,6 +49,8 @@ defined( 'ABSPATH' ) || exit;
 			<?php echo excel_header('practice', 'Practice');?>
 
 			<?php echo excel_header('conclusion', 'Conclusion');?>
+			</div>
+		</div>
 		<?php //the_content(); ?>
 
 
