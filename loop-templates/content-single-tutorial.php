@@ -55,12 +55,13 @@ defined( 'ABSPATH' ) || exit;
 
 
 		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
+		// wp_link_pages(
+		// 	array(
+		// 		'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+		// 		'after'  => '</div>',
+		// 	)
+		// );
+		echo excel_tutorial_nav();
 		?>
 
 	</div><!-- .entry-content -->
