@@ -287,11 +287,11 @@ function excel_tutorial_nav(){
     $html = '';
     if(get_field('previous_link')){
         $prev = get_field('previous_link');
-        $html .= "<a class='previous-btn tutorial-nav-btn' href='{$prev}'>< Previous</a>";
+        $html .= "<a class='previous-btn tutorial-nav-btn' href='{$prev}'>Previous</a>";
     }
      if(get_field('next_link')){
         $next = get_field('next_link');
-        $html .= "<a class='next-btn tutorial-nav-btn' href='{$next}'>Next ></a>";
+        $html .= "<a class='next-btn tutorial-nav-btn' href='{$next}'>Next</a>";
     }
     return "<div class='col-md-8 offset-md-2 d-flex justify-content-between'>{$html}</div>";
 }
