@@ -106,13 +106,13 @@ ul, ol {
 }
 
 #navbar-tutorial {
-	// position: fixed;
-	// left: 20px;
-	// top: 100px;
-	// width: 100%;
-    // max-width: inherit;
-    // display: inline-block;
-	// z-index: 100;
+	position: fixed;
+	left: 20px;
+	top: 100px;
+	width: 100%;
+    max-width: inherit;
+    display: inline-block;
+	z-index: 100;
 	transition: all .3s ease;
 }
 
