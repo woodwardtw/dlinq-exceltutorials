@@ -1,6 +1,6 @@
 {
   "name": "understrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WordPress Theme framework",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,10 @@
     "watch-run-css": "nodemon --watch sass/ --ext scss --exec \"npm-run-all css\"",
     "watch-run-js": "nodemon --watch src/js/ --ext js --exec \"npm-run-all js\"",
     "copy-assets": "node src/build/copy-assets.js",
-    "dist": "npm-run-all --parallel css js"
+    "dist": "npm-run-all --parallel css js",
+    "dist-build": "node src/build/dist-build.js",
+    "dist-clean": "node src/build/dist-clean.js",
+    "build": "rm dist.zip && npm run copy-assets && npm run dist && npm run dist-clean && npm run dist-build && zip -r -X dist.zip dist/"
   },
   "engines": {
     "node": "^12 || >=14"
@@ -40,6 +43,17 @@
   },
   "homepage": "https://understrap.com",
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "terser": "^5.7.1"
   },
   "devDependencies": {
@@ -49,7 +63,7 @@
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-multi-entry": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
-    "autoprefixer": "^10.3.2",
+    "autoprefixer": "^10.4.7",
     "bootstrap": "^4.6.0",
     "browser-sync": "^2.27.5",
     "browserslist": "^4.16.8",

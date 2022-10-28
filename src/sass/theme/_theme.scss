@@ -106,13 +106,15 @@ ul, ol {
 }
 
 #navbar-tutorial {
+
 	position: fixed;
-	left: 20px;
-	top: 100px;
-	width: 100%;
-    max-width: inherit;
-    display: inline-block;
-	z-index: 100;
+	// position: fixed;
+	// left: 20px;
+	// top: 100px;
+	// width: 100%;
+    // max-width: inherit;
+    // display: inline-block;
+	// z-index: 100;
 	transition: all .3s ease;
 }
 
@@ -181,19 +183,12 @@ ul, ol {
     height: auto;
 	display: inline-block;
 }
-// .tutorial-nav {
-// 	position: fixed;
-// 	top: 150px;
-// 	left: 20px;
-// }
 
-// .tutorial-nav ul {
-// 	list-style-type: none;
-// }
-
-// .tutorial-nav a:last-of-type {
-// 	border-right: 0;
-// }
+.tutorial-nav {
+	position: fixed;
+	top: 150px;
+	left: 20px;
+}
 
 .primary-gif {
 	width: 50%;
