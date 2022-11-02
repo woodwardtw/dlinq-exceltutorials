@@ -46,7 +46,7 @@ function excel_example_file()
 
 function excel_nav_builder()
 {
-    $functions = get_field('how_to_loop') . false;
+    $functions = get_field('how_to_loop');
     $uses = get_field('uses_loop');
     $course = get_field('course_content');
     $modules = get_field('modules');
@@ -55,13 +55,13 @@ function excel_nav_builder()
     $html .= excel_sidebar_nav_li_alt('modules', 'Modules');
     if ($functions) {
         $html .= '<li class="nav-item"><a class="nav-link" href="#functions">Functions</a></li><ul class="secondary nav nav-pills">';
-        foreach ($functions as $key => $row) {
-            $title = $row['section_title'];
-            $slug = sanitize_title($title) . '-' . $key;
-            $html .= excel_sidebar_nav_li($slug, $title);
-            // $media = $row[''];
-            // $body = $row[''];
-        }
+        // foreach ($functions as $key => $row) {
+        //     $title = $row['section_title'];
+        //     $slug = sanitize_title($title) . '-' . $key;
+        //     $html .= excel_sidebar_nav_li($slug, $title);
+        //     // $media = $row[''];
+        //     // $body = $row[''];
+        // }
         $html .= '</ul>';
     }
     if ($uses) {
