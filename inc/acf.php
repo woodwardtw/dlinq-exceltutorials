@@ -16,7 +16,7 @@ function resource_image($title)
 {
     if (get_field('featured_image')) {
         $img_data = get_field('featured_image');
-        $url = $img_data['sizes']['medium-large'];
+        $url = $img_data['sizes']['medium_large'];
         if($img_data['alt']){
             $alt = $img_data['alt']; 
         } else {
