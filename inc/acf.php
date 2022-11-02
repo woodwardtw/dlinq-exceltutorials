@@ -12,12 +12,16 @@ defined('ABSPATH') || exit;
 
 
 //resources
-function resource_image()
+function resource_image($title)
 {
     if (get_field('featured_image')) {
         $img_data = get_field('featured_image');
         $url = $img_data['sizes']['medium'];
-        $alt = $img_data['alt'];
+        if($img_data['alt']){
+            $alt = $img_data['alt']; 
+        } else {
+            $alt = $title . ' image.';
+        }
         return "<img src='{$url}' alt='{$alt}' class='resource_image'>";
     } else {
         $img_url = get_stylesheet_directory_uri() . '/imgs/binary.svg';
