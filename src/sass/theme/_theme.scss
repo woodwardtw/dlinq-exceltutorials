@@ -309,6 +309,7 @@ li .btn-excel {
 
 .card:hover {
 	box-shadow: 7px 7px 0px $primary;
+	transform: scale(1.02);
 	// margin: -7px 0 -7px 0;
 }
 
@@ -368,6 +369,11 @@ li .btn-excel {
 .next-btn:hover{
 	text-decoration: none;
 	background-position: right 15px center;
+}
+
+.midd-footer-logo {
+	display: block;
+	margin: 30px auto;
 }
 
 @include media-breakpoint-down(sm) { 
