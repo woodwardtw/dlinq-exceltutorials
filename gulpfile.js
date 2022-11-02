@@ -16,6 +16,7 @@ var autoprefixer = require( 'autoprefixer' );
 
 // Configuration file to keep your code DRY
 var cfg = require( './gulpconfig.json' );
+var browserConfig = require( './src/build/browser-sync.config')
 var paths = cfg.paths;
 
 /**
@@ -155,7 +156,7 @@ gulp.task( 'watch', function() {
  * Run: gulp browser-sync
  */
 gulp.task( 'browser-sync', function() {
-	browserSync.init( cfg.browserSyncOptions );
+	browserSync.init( browserConfig );
 } );
 
 /**

@@ -1,6 +1,6 @@
 {
 	"browserSyncOptions": {
-		"proxy": "localhost/",
+		"proxy": "http://learnexcel.middcreate.net/",
 		"notify": false,
 		"files": ["./css/*.min.css", "./js/*.min.js", "./**/*.php"]
 	},
@@ -10,7 +10,7 @@
 		"fonts": "./fonts",
 		"img": "./img",
 		"imgsrc": "./src/img",
-		"sass": "./sass",
+		"sass": "./build/sass",
 		"node": "./node_modules",
 		"composer": "./vendor",
 		"dev": "./src",
