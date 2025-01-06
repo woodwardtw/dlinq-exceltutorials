@@ -136,3 +136,57 @@ function course_type() {
 
 }
 add_action( 'init', 'course_type', 0 );
+
+
+//override video 
+// Remove the default video shortcode and replace it with your custom implementation
+add_action('init', function() {
+    // Remove the default [video] shortcode
+    remove_shortcode('video');
+    
+    // Add your custom [video] shortcode
+    add_shortcode('video', 'custom_video_shortcode');
+});
+
+/**
+ * Custom implementation of the [video] shortcode.
+ *
+ * @param array $atts Attributes passed to the shortcode.
+ * @param string|null $content Content inside the shortcode (if any).
+ * @return string HTML output for the video.
+ */
+function custom_video_shortcode($atts, $content = null) {
+    // Parse shortcode attributes with default values
+    $atts = shortcode_atts(
+        [
+            'src'    => '',      // Video source URL
+            'poster' => '',      // Poster image URL
+            'width'  => '640',   // Default width
+            'height' => '360',   // Default height
+        ],
+        $atts,
+        'video'
+    );
+
+    // Ensure the `src` attribute is valid
+    if (empty($atts['src'])) {
+        return '<p>Error: Video source URL is missing.</p>';
+    }
+
+    // Sanitize attributes
+    $src = esc_url($atts['src']);
+    $poster = esc_url($atts['poster']);
+    $width = intval($atts['width']);
+    $height = intval($atts['height']);
+
+    // Construct the custom HTML for the video embed
+    $html = sprintf(
+        '<video controls width="%d" height="%d" src="%s"%s></video>',
+        $width,
+        $height,
+        $src,
+        $poster ? sprintf(' poster="%s"', $poster) : ''
+    );
+
+    return $html;
+}
